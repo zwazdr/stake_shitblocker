@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="auto">
+<head>
+  <meta charset="UTF-8" />
+  <title>Stake Provider Blocker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <h1 data-i18n="popupTitle">Provider Blocker</h1>
+
+    <p class="subtitle" data-i18n="popupSubtitle">
+      Choose providers whose games should be completely removed from the list.
+    </p>
+
+    <div class="master-box">
+      <div>
+        <div class="master-title" data-i18n="masterTitle">Enable blocking</div>
+        <div class="master-desc" data-i18n="masterDesc">
+          Turn blocking off with one click without deleting saved providers.
+        </div>
+      </div>
+
+      <label class="switch">
+        <input id="blockerEnabledToggle" type="checkbox" />
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="special-box">
+      <div>
+        <div class="special-title" data-i18n="onlyStakeTitle">Block Only on Stake</div>
+        <div class="special-desc" data-i18n="onlyStakeDesc">
+          Hides games marked with the Stake “S” icon.
+        </div>
+      </div>
+
+      <label class="switch">
+        <input id="onlyOnStakeToggle" type="checkbox" />
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <input
+      id="providerSearch"
+      class="provider-search"
+      type="text"
+      data-i18n-placeholder="searchPlaceholder"
+      placeholder="Search provider..."
+      autocomplete="off"
+    />
+
+    <div id="providersList" class="providers-list"></div>
+
+    <div class="actions">
+      <button id="selectAllBtn" data-i18n="blockAllButton">Block all</button>
+      <button id="clearAllBtn" data-i18n="unblockAllButton">Unblock all</button>
+    </div>
+
+    <p class="footer" data-i18n="footerText">Works on stake.com</p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
