@@ -141,7 +141,7 @@ Used to save your blocked providers and extension settings.
 
 tabs
 
-Used to notify open Stake.com tabs when settings are changed from the popup.
+Used to notify open Stake.com tabs when settings are changed from the pop-up.
 
 Host permissions for Stake.com
 https://stake.com/*
@@ -155,26 +155,6 @@ Stake.com is a dynamic website, so the page may load new game tiles while you sc
 
 The extension watches for newly loaded content and hides matching games when they appear.
 
-If Stake.com changes its HTML structure, some filters may need to be updated.
-
-Development
-
-After making changes to the extension files:
-
-Open:
-chrome://extensions/
-Click Reload on the extension card.
-Refresh Stake.com with:
-CTRL + F5
-Recommended repository name
-
-Possible repository names:
-
-shitblocker
-stake-provider-blocker
-casino-provider-blocker
-
-Use a neutral name if you want the project to look more public/professional.
 
 License
 
